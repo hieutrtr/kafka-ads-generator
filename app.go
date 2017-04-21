@@ -48,7 +48,7 @@ func generate(st interface{}, num int, sup chan<- string) {
 
 func main() {
 	if topic == "" {
-		panic("KAFKA_TOPIC env need to be set")
+		panic("KAFKA_TOPIC env need to be set !")
 	}
 	sup := make(chan string, numEvents)
 	res := make(chan error, numEvents)
